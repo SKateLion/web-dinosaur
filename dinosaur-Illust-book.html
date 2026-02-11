@@ -1,0 +1,150 @@
+dinosaur-Illust-book.html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恐竜図鑑</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>恐竜図鑑</h1>
+        <p>古代の巨大生物たちを紹介します</p>
+    </header>
+
+    <main class="container">
+        <div class="dinosaur-grid">
+            <div class="dinosaur-card">
+                <div class="dino-icon">🦖</div>
+                <h2>ティラノサウルス</h2>
+                <div class="dino-info">
+                    <p><strong>時代:</strong> 白亜紀後期</p>
+                    <p><strong>食性:</strong> 肉食</p>
+                    <p class="description">ティラノサウルスは「暴君トカゲ」という意味を持つ、最も有名な肉食恐竜です。</p>
+                </div>
+            </div>
+
+            <div class="dinosaur-card">
+                <div class="dino-icon">🦏</div>
+                <h2>トリケラトプス</h2>
+                <div class="dino-info">
+                    <p><strong>時代:</strong> 白亜紀後期</p>
+                    <p><strong>食性:</strong> 草食</p>
+                    <p class="description">トリケラトプスは「3本の角を持つ顔」という意味の草食恐竜です。</p>
+                </div>
+            </div>
+
+            <div class="dinosaur-card">
+                <div class="dino-icon">🦕</div>
+                <h2>ステゴサウルス</h2>
+                <div class="dino-info">
+                    <p><strong>時代:</strong> ジュラ紀後期</p>
+                    <p><strong>食性:</strong> 草食</p>
+                    <p class="description">ステゴサウルスは背中に並んだ板状の骨が特徴的な草食恐竜です。</p>
+                </div>
+            </div>
+        </div>
+    </main>
+<style class="css">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial';
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #718096;
+    font-size: 1.1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.dinosaur-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.dinosaur-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.dino-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.dinosaur-card h2 {
+    color: #2d3748;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.dino-info {
+    text-align: left;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.dino-info p {
+    margin: 10px 0;
+    color: #4a5568;
+}
+
+.description {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #e2e8f0;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    color: #718096;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .dinosaur-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+</body>
+</html>
